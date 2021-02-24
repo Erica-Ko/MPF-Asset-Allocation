@@ -165,6 +165,11 @@ def main():
   with open('fund_data.txt', 'w') as file:
      file.write(json.dumps(df_all_dict))
   output_dict = {'Provider':{'MPF Scheme Name':df_all_dict}}
+  
+  ### Save the result to file ###
+  with open(os.path.join(base_path,'fund_data.txt'), 'w') as file:
+     file.write(json.dumps(df_all_dict))
+      
   return output_dict
 
 if __name__ == "__main__":
