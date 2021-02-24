@@ -7,7 +7,7 @@ import os
 ### Load fund data ###
 # output_dict = data_layer.main()
 # contents = output_dict['Provider']['MPF Scheme Name']
-# df = pd.read_json(contents)
+# df = pd.DataFrame(contents)
 
 with open('fund_data.txt', 'r') as file:
     contents = file.read()
